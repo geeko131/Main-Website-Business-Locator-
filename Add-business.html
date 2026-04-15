@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Locator · Add your business</title>
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- external CSS (shared stylesheet) -->
+  <link rel="stylesheet" href="prototype(styles).css">
+</head>
+<body>
+  <!-- header with navigation (same as main page) -->
+  <header class="site-header">
+    <div class="container header-flex">
+      <div class="logo">
+        <i class="fas fa-map-pin" style="color: #2a7f62; margin-right: 8px;"></i>
+        <span>Business<span class="logo-highlight">Locator</span></span>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="businesses.html">Businesses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <a href="add-business.html" class="btn-outline-sm active"><i class="fa-regular fa-building"></i> Add business</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Add Business Form Section -->
+    <section class="add-business-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Add your <span>business</span></h2>
+          <p>Reach more customers – list your services for free</p>
+        </div>
+
+        <div class="add-business-form">
+          <form action="#" method="post">
+            <!-- Business name -->
+            <div class="form-group">
+              <label for="businessName">Business name *</label>
+              <input type="text" id="businessName" name="businessName" placeholder="e.g., Downtown Bakery" required>
+            </div>
+
+            <!-- Category -->
+            <div class="form-group">
+              <label for="category">Category *</label>
+              <select id="category" name="category" required>
+                <option value="">Select a category</option>
+                <option value="food">Food & dining</option>
+                <option value="retail">Retail shops</option>
+                <option value="health">Health & wellness</option>
+                <option value="services">Services & repair</option>
+                <option value="local">Local stores</option>
+                <option value="pet">Pet services</option>
+              </select>
+            </div>
+
+            <!-- Two-column row: address & phone -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="address">Street address *</label>
+                <input type="text" id="address" name="address" placeholder="123 Main Street" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+              </div>
+            </div>
+
+            <!-- Website (optional) -->
+            <div class="form-group">
+              <label for="website">Website (optional)</label>
+              <input type="url" id="website" name="website" placeholder="https://yourbusiness.com">
+            </div>
+
+            <!-- Business description -->
+            <div class="form-group">
+              <label for="description">Short description *</label>
+              <textarea id="description" name="description" rows="4" placeholder="Tell customers what makes your business special..." required></textarea>
+            </div>
+
+            <!-- Logo/image upload (simulated) -->
+            <div class="form-group file-input">
+              <label for="logo"><i class="fas fa-cloud-upload-alt"></i> Business logo / image (optional)</label>
+              <input type="file" id="logo" name="logo" accept="image/*">
+              <small style="display: block; margin-top: 0.5rem; color: #547668;">PNG, JPG up to 5MB</small>
+            </div>
+
+            <!-- Agreement checkbox -->
+            <div class="checkbox-group">
+              <input type="checkbox" id="agree" name="agree" required>
+              <label for="agree">I confirm that the information provided is accurate and I agree to the <a href="#" style="color:#2a7f62;">Terms of Use</a>.</label>
+            </div>
+
+            <!-- Submit button -->
+            <div style="text-align: center; margin-top: 2rem;">
+              <button type="submit" class="btn-primary" style="padding: 0.9rem 3rem;"><i class="fa-regular fa-paper-plane"></i> Submit listing</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Extra info / benefits -->
+    <section class="map-preview" style="padding-top: 0;">
+      <div class="container">
+        <div class="map-placeholder" style="background: #f0f7f4;">
+          <i class="fas fa-chart-line"></i>
+          <p>✨ Listing your business is completely free. Get discovered by thousands of local customers every month.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (same as homepage) -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <div class="logo" style="margin-bottom: 1rem;">
+          <i class="fas fa-map-pin" style="color: #2a7f62;"></i>
+          <span>BusinessLocator</span>
+        </div>
+        <p>Your trusted digital directory for nearby businesses. Supporting local shops and services.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="add-business.html">Add your business</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Terms of use</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Stay updated</h4>
+        <p>New businesses in your area</p>
+        <div class="newsletter-box">
+          <input type="email" placeholder="Your email">
+          <button><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Business Locator – Connecting communities, one business at a time.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Locator · Find local services</title>
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- external CSS (updated) -->
+  <link rel="stylesheet" href="prototype(styles).css">
+</head>
+<body>
+  <!-- header with navigation - ACTIVE HOME -->
+  <header class="site-header">
+    <div class="container header-flex">
+      <div class="logo">
+        <i class="fas fa-map-pin" style="color: #2a7f62; margin-right: 8px;"></i>
+        <span>Business<span class="logo-highlight">Locator</span></span>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="businesses.html">Businesses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <a href="add-business.html" class="btn-outline-sm"><i class="fa-regular fa-building"></i> Add business</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO section with search -->
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>Discover nearby businesses,<br> right around you.</h1>
+        <p class="hero-subhead">Your central platform for local shops, services, and professional help — all categorised and easy to find.</p>
+        
+        <!-- search bar -->
+        <div class="search-wrapper">
+          <div class="search-box">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" placeholder="Search business or category (e.g. bakery, plumber, pharmacy)">
+            <button class="btn-primary">Search</button>
+          </div>
+        </div>
+
+        <!-- quick category pills -->
+        <div class="quick-cats">
+          <span>Popular: </span>
+          <a href="categories.html" class="cat-pill">Restaurants</a>
+          <a href="categories.html" class="cat-pill">Shops</a>
+          <a href="categories.html" class="cat-pill">Healthcare</a>
+          <a href="categories.html" class="cat-pill">Repair</a>
+          <a href="categories.html" class="cat-pill">Salons</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES section (main categories) -->
+    <section class="categories">
+      <div class="container">
+        <div class="section-title">
+          <h2>Browse by <span>category</span></h2>
+          <p>Quickly filter businesses by the service you need</p>
+        </div>
+        <div class="category-grid">
+          <div class="cat-card">
+            <div class="cat-icon"><i class="fas fa-utensils"></i></div>
+            <h3>Food & dining</h3>
+            <p>Restaurants, cafes, bakeries</p>
+          </div>
+          <div class="cat-card">
+            <div class="cat-icon"><i class="fas fa-cart-shopping"></i></div>
+            <h3>Retail shops</h3>
+            <p>Clothing, electronics, gifts</p>
+          </div>
+          <div class="cat-card">
+            <div class="cat-icon"><i class="fas fa-heart-pulse"></i></div>
+            <h3>Health & wellness</h3>
+            <p>Pharmacies, clinics, gyms</p>
+          </div>
+          <div class="cat-card">
+            <div class="cat-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+            <h3>Services & repair</h3>
+            <p>Electricians, plumbers, car repair</p>
+          </div>
+          <div class="cat-card">
+            <div class="cat-icon"><i class="fas fa-bag-shopping"></i></div>
+            <h3>Local stores</h3>
+            <p>Groceries, boutiques, florists</p>
+          </div>
+          <div class="cat-card">
+            <div class="cat-icon"><i class="fas fa-dog"></i></div>
+            <h3>Pet services</h3>
+            <p>Grooming, vet, boarding</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED BUSINESSES (listings with details) -->
+    <section class="featured">
+      <div class="container">
+        <div class="section-title">
+          <h2>Featured <span>local businesses</span></h2>
+          <p>Recently added – view location, contact & services</p>
+        </div>
+
+        <div class="business-grid">
+          <!-- card 1 -->
+          <div class="business-card">
+            <div class="card-header">
+              <div class="business-logo" style="background-color: #e6f3f0;">C</div>
+              <div class="business-info">
+                <h3>Cafe Central</h3>
+                <span class="badge-cat"><i class="fa-regular fa-circle-check"></i> Food & drink</span>
+              </div>
+            </div>
+            <p class="business-desc">Fresh coffee, homemade pastries and cozy atmosphere in the heart of downtown.</p>
+            <div class="business-contact">
+              <div><i class="fas fa-map-pin"></i> 24 Main Street</div>
+              <div><i class="fas fa-phone"></i> (555) 123-4567</div>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="map-link"><i class="fa-solid fa-location-dot"></i> View on map</a>
+              <a href="#" class="details-link">Details →</a>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="business-card">
+            <div class="card-header">
+              <div class="business-logo" style="background-color: #e0f2fe;">P</div>
+              <div class="business-info">
+                <h3>Pharma Plus</h3>
+                <span class="badge-cat"><i class="fa-regular fa-circle-check"></i> Pharmacy</span>
+              </div>
+            </div>
+            <p class="business-desc">24-hour pharmacy with prescription delivery, vitamins and health consultations.</p>
+            <div class="business-contact">
+              <div><i class="fas fa-map-pin"></i> 15 Oak Avenue</div>
+              <div><i class="fas fa-phone"></i> (555) 987-6543</div>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="map-link"><i class="fa-solid fa-location-dot"></i> View on map</a>
+              <a href="#" class="details-link">Details →</a>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="business-card">
+            <div class="card-header">
+              <div class="business-logo" style="background-color: #fff4e6;">F</div>
+              <div class="business-info">
+                <h3>Fixit Repairs</h3>
+                <span class="badge-cat"><i class="fa-regular fa-circle-check"></i> Home services</span>
+              </div>
+            </div>
+            <p class="business-desc">Expert repairs for appliances, plumbing, and electrical – same‑day service available.</p>
+            <div class="business-contact">
+              <div><i class="fas fa-map-pin"></i> 7 Industrial Rd</div>
+              <div><i class="fas fa-phone"></i> (555) 246-8101</div>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="map-link"><i class="fa-solid fa-location-dot"></i> View on map</a>
+              <a href="#" class="details-link">Details →</a>
+            </div>
+          </div>
+
+          <!-- card 4 -->
+          <div class="business-card">
+            <div class="card-header">
+              <div class="business-logo" style="background-color: #f3e8ff;">B</div>
+              <div class="business-info">
+                <h3>Book Nook</h3>
+                <span class="badge-cat"><i class="fa-regular fa-circle-check"></i> Retail</span>
+              </div>
+            </div>
+            <p class="business-desc">Independent bookstore with rare editions, local authors, and reading nook.</p>
+            <div class="business-contact">
+              <div><i class="fas fa-map-pin"></i> 42 Maple Street</div>
+              <div><i class="fas fa-phone"></i> (555) 369-1212</div>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="map-link"><i class="fa-solid fa-location-dot"></i> View on map</a>
+              <a href="#" class="details-link">Details →</a>
+            </div>
+          </div>
+        </div>
+        <div class="centered-link">
+          <a href="businesses.html" class="btn-secondary"><i class="fa-regular fa-eye"></i> View all businesses</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP PLACEHOLDER -->
+    <section class="map-preview">
+      <div class="container">
+        <div class="section-title">
+          <h2>See businesses <span>on the map</span></h2>
+          <p>Interactive view – find what’s close to you</p>
+        </div>
+        <div class="map-placeholder">
+          <i class="fas fa-map-location-dot"></i>
+          <p>🗺️ Interactive map coming soon — preview: businesses near you</p>
+          <div class="map-dots">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <div class="logo" style="margin-bottom: 1rem;">
+          <i class="fas fa-map-pin" style="color: #2a7f62;"></i>
+          <span>BusinessLocator</span>
+        </div>
+        <p>Your trusted digital directory for nearby businesses. Supporting local shops and services.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="add-business.html">Add your business</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Terms of use</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Stay updated</h4>
+        <p>New businesses in your area</p>
+        <div class="newsletter-box">
+          <input type="email" placeholder="Your email">
+          <button><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Business Locator – Connecting communities, one business at a time.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

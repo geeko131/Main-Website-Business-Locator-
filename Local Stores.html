@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Stores</title>
+    <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- external CSS (shared stylesheet) -->
+  <link rel="stylesheet" href="prototype(styles).css">
+</head>
+<body>
+     <!-- header with navigation - ACTIVE HOME -->
+  <header class="site-header">
+    <div class="container header-flex">
+      <div class="logo">
+        <i class="fas fa-map-pin" style="color: #2a7f62; margin-right: 8px;"></i>
+        <span>Business<span class="logo-highlight">Locator</span></span>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="businesses.html">Businesses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <a href="add-business.html" class="btn-outline-sm"><i class="fa-regular fa-building"></i> Add business</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO section with search -->
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>Discover nearby businesses,<br> right around you.</h1>
+        <p class="hero-subhead">Your central platform for local shops, services, and professional help — all categorised and easy to find.</p>
+        
+        <!-- search bar -->
+        <div class="search-wrapper">
+          <div class="search-box">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" placeholder="Search business or category (e.g. bakery, plumber, pharmacy)">
+            <button class="btn-primary">Search</button>
+          </div>
+        </div>
+
+        <!-- quick category pills -->
+        <div class="quick-cats">
+          <span>Popular: </span>
+          <a href="categories.html" class="cat-pill">Restaurants</a>
+          <a href="categories.html" class="cat-pill">Shops</a>
+          <a href="categories.html" class="cat-pill">Healthcare</a>
+          <a href="categories.html" class="cat-pill">Repair</a>
+          <a href="categories.html" class="cat-pill">Salons</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="Stores-List">
+    <h1>Local Stores Profiles</h1>
+     <div class="Stores-Item">
+        <img src="Local Stores/Zikhali.jpeg" alt="Store 1" class="Stores-Image">
+        <h2>Zikhali Cultural Center</h2>
+        <p>Sell traditional crafts and souvenirs</p>
+        <p>In Front of Schoemansadal Police Station</p>
+        <p>Price: Varies</p>
+        <p>Operating Hours:07h00-18h00</p>
+        <p>Cell no: +27 12 345 6789</p>
+      </div>  
+     <div class="Stores-Item">
+        <img src="Local Stores/Spaza.jpeg" alt="Store 2" class="Stores-Image">
+        <h2>White Lion No3 Supermarket</h2>
+        <p>Offers a variety of local products and fresh produce.</p>
+        <p>Price: Varies</p>
+        <p>R40 Way-Inn, Matsamo, Mpumalanga</p>
+        <p>Operating Hours:06h00-17h00</p>
+        <p>Cell no: +27 12 345 6789</p>
+       </div>
+   </div>
+
+   <script src="Script(2).js"></script>
+</body>
+</html>
